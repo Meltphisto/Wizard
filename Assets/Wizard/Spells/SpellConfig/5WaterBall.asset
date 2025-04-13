@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad36deba429685459d0c06d03517fde, type: 3}
+  m_Name: 5WaterBall
+  m_EditorClassIdentifier: 
+  spellId: 5
+  spellName: WaterBall
+  requiredElementCombo:
+  - elementConfig: {fileID: 11400000, guid: 6e4ad21059a92334ea520daab1b46ed8, type: 2}
+    elementReserve: 3
+  spellType: 0
+  prepareTime: 2.75
+  animationTime: 3
+  speed: 5
+  damage: 4
+  prefab: {fileID: 7209167759071856588, guid: 098c2bca8bcc2ae46b5dff7728353722, type: 3}
+  prepareVFX: {fileID: 6574228776299219901, guid: 8891568d5f1c20f419219cf9e1a431bf,
+    type: 3}

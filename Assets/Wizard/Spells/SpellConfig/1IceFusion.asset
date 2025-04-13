@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad36deba429685459d0c06d03517fde, type: 3}
+  m_Name: 1IceFusion
+  m_EditorClassIdentifier: 
+  spellId: 1
+  spellName: IceFusion
+  requiredElementCombo:
+  - elementConfig: {fileID: 11400000, guid: d9083ddd841032540912c90ca7ff26d3, type: 2}
+    elementReserve: 1
+  - elementConfig: {fileID: 11400000, guid: 6e4ad21059a92334ea520daab1b46ed8, type: 2}
+    elementReserve: 2
+  spellType: 2
+  prepareTime: 0
+  animationTime: 0
+  speed: 0
+  damage: 0
+  prefab: {fileID: 4287599599668474358, guid: 7a1c48d419e5cd946a874dbbcb7edb38, type: 3}
+  prepareVFX: {fileID: 0}

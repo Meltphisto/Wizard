@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d6a671cc148604c8aae1089ec2dbad, type: 3}
+  m_Name: Minion
+  m_EditorClassIdentifier: 
+  id: 0
+  enemyNname: Minion
+  step: 2
+  speed: 0.5
+  maximumHealth: 20
+  castDamage: 1
+  prefab: {fileID: 6606223483334585010, guid: fe14b462b961f4941a6738c079cab192, type: 3}
+  icon: {fileID: 21300000, guid: 982e19957b50e144088eaf33e85a6b68, type: 3}
