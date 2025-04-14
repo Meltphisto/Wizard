@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum GameState
 {
@@ -21,6 +22,7 @@ public class StateManager : MonoBehaviour
     [SerializeField] GameObject playerUI;
     [SerializeField] GameObject transition;
     [SerializeField] GameObject enemyBroadCast;
+    [SerializeField] GameObject endMenu;
     [SerializeField] ShotSwitcher shotSwitcher;
     ElementManager elementManager;
     EnemyManager enemyManager;
@@ -50,6 +52,9 @@ public class StateManager : MonoBehaviour
                 break;
             case GameState.EnemyState:
                 StartCoroutine(BroadCastEnemyAmount());
+                break;
+            case GameState.EndState:
+                HandleEnd();
                 break;
         }
         gameState = state;
@@ -141,8 +146,28 @@ public class StateManager : MonoBehaviour
         yield return new WaitForSeconds(enemyManager.transform.childCount * 0.8f);
         StartCoroutine(PlayTransition(GameState.PlayerState, 1.5f));
     }
+    void HandleEnd()
+    {
+        playerUI.SetActive(false);
+        endMenu.SetActive(true);
+    }
 
-    
+    public void RestartTheGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    private void Update()
+    {
+        if (enemyManager.isVictory)
+        {
+            ChangeState(GameState.EndState);
+        }
+    }
 
 
 }

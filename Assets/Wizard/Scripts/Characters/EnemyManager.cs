@@ -128,11 +128,5 @@ public class EnemyManager : MonoBehaviour
         {
             isVictory = true;
         }
-
-        //测试用控制怪物移动
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(MoveAllEnemy());
-        }
     }
 }
